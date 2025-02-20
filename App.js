@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-const supabase = createClient("https://kksjymuyhfpfhighcumq.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtrc2p5bXV5aGZwZmhpZ2hjdW1xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAwNjk4MDIsImV4cCI6MjA1NTY0NTgwMn0.6ODkzw6MCHecCxJEat33goJq6Vemu-GYZbMkBmyYthc");
+const supabase = createClient("url", "api key");
 
 const Stack = createStackNavigator();
 
@@ -81,7 +81,7 @@ export default function App() {
       <View style={styles.homeContainer}>
         { contaCriada ?
           <View>
-            <Text>hahahaha</Text>
+            <Text>Bem vindo, este app é apenas um teste</Text>
           </View>
           :
           <View>
