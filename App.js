@@ -84,9 +84,11 @@ export default function App() {
             <Text>hahahaha</Text>
           </View>
           :
-          <View style={styles.button}>
+          <View>
             <Text>O que deseja fazer?</Text>
-            <Text style={styles.btnText} onPress={() => {navigation.navigate('Registro')}}>Criar Conta</Text>
+            <View style={styles.button}>
+              <Text style={styles.btnText} onPress={() => {navigation.navigate('Registro')}}>Criar Conta</Text>
+            </View>
           </View>
         }
       </View>
